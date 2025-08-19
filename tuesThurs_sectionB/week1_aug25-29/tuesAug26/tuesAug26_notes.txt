@@ -1,3 +1,54 @@
 Syllabus
 
 Class structure
+
+////////////////////////
+
+What is this class about?
+- More involved programming class
+- Java first, C# at end
+
+Class structure.
+
+Syllabus.
+
+Canvas setup.
+
+/////////////////////////////////
+
+Java/VS Code/git setup.
+
+How to set up own computer?
+
+
+/////////////////////////////////
+
+--> creating CIS 200 repository
+
+--> folder structure
+
+--> how to compile and run example program 
+
+
+
+////////////////////////////////
+
+Printing
+
+
+////////////////////////////////
+
+Data types / variables
+
+
+////////////////////////////////
+
+User input (just text for now)
+
+////////////////////////////////
+
+Printing variables (just strings for now)
+
+////////////////////////////////
+
+Lab 1.
