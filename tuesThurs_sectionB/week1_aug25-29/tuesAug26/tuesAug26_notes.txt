@@ -14,6 +14,8 @@ Syllabus.
 
 Canvas setup.
 
+GitHub account - what is git?
+
 /////////////////////////////////
 
 Java/VS Code/git setup.
@@ -23,12 +25,10 @@ How to set up own computer?
 
 /////////////////////////////////
 
---> creating CIS 200 repository
+Write Hello, world program.
 
---> folder structure
 
---> how to compile and run example program 
-
+How to compile/run.
 
 
 ////////////////////////////////
@@ -38,17 +38,13 @@ Printing
 
 ////////////////////////////////
 
-Data types / variables
+Lab 1 -> see whole process.
+
+
+
+How to get checked off.
 
 
 ////////////////////////////////
 
-User input (just text for now)
-
-////////////////////////////////
-
-Printing variables (just strings for now)
-
-////////////////////////////////
-
-Lab 1.
+What to do rest of week.
