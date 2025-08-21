@@ -1,8 +1,6 @@
-Syllabus
+CIS 200 - Programming Fundamentals
 
-Class structure
 
-////////////////////////
 
 What is this class about?
 - More involved programming class
