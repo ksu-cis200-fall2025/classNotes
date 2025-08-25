@@ -8,11 +8,21 @@ What is this class about?
 
 Class structure.
 
+background reading
+video tutorial
+2 labs
+1 project
+
+
 Syllabus.
+
 
 Canvas setup.
 
+
 GitHub account - what is git?
+
+
 
 /////////////////////////////////
 
