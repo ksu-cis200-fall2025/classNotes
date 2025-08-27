@@ -1,15 +1,19 @@
 Lab 2: today
 
-Project 1: due Friday, August 29
-    (what to do, how to submit)
-
-///////////////////////////
-
-How to view modules
+How to view modules in Canvas
 
 //////////////////////////
 
-Project 1 due Friday - what to do?
+Project 1 due Friday, August 29
+    --> what to do?
+
+//////////////////////////
+
+What to do for next week?
+
+No class Thursday, September 4
+    (since other section won't meet Mon.)
+
 
 //////////////////////////
 
@@ -23,15 +27,21 @@ System.out.print("text");
 
 Variables.
 
+
 Data types in Java.
+
 
 Declaring variables.
 
+
 Initializing variables.
+
 
 Literals.
 
+
 Operations.
+
 
 //////////////////////////
 
@@ -61,17 +71,15 @@ Modulo.
 
 //////////////////////////
 
-Example: pizzas have 8 slices. Get #pizzas, #people. 
+Example: pizzas have 8 slices. 
+Get #pizzas, #people. 
 
-Print how many slices everyone can have, how many are leftover.
+Print how many slices everyone can have, 
+how many are leftover.
 
-//////////////////////////
-
-what to do before next Lab
-
-(No class Monday, September 1)
 
 //////////////////////////
 
 discuss Lab 2
 
+printing a %
