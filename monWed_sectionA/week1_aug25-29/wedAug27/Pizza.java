@@ -10,5 +10,17 @@ public class Pizza {
 
         Scanner s = new Scanner(System.in);
 
+        System.out.print("Enter number of pizzas: ");
+        int pizzas = s.nextInt();
+
+        System.out.print("Enter number of people: ");
+        int people = s.nextInt();
+
+        int totalSlices = pizzas*8;
+        int slicesEach = totalSlices / people;
+        int leftover = totalSlices % people;
+
+        //Everyone gets xx slices with xx leftover
+        System.out.printf("Everyone gets %d slices with %d leftover%n", slicesEach, leftover);
     }
 }
