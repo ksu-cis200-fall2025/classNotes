@@ -11,6 +11,8 @@ How to view modules
 
 Project 1 due Friday - what to do?
 
+what to submit?
+
 //////////////////////////
 
 System.out.println("text");
@@ -61,10 +63,9 @@ Modulo.
 
 //////////////////////////
 
-Example: pizzas have 8 slices. Want enough pizzas that everyone
-can have at least two slices but with the minimum leftovers.
+Example: pizzas have 8 slices. Get #pizzas, #people. 
 
-Get #people, print needed #pizzas. Say how many leftover slices.
+Print how many slices everyone can have, how many are leftover.
 
 //////////////////////////
 
