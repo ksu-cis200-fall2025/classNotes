@@ -1,0 +1,109 @@
+Video tutorial due yesterday (hopefully you've already done it)
+
+Try to do tutorials before first lab of the week
+    (usually they will be due on Monday)
+
+Lab 3: today
+
+Project 2: Friday, September 5
+
+/////////////////
+
+Week 3 (next week):
+
+- background reading
+- video tutorial due Monday
+- labs Tues/Thurs
+- project due Friday
+
+/////////////////
+
+
+if (y > 0) {
+    if (y < 10) {
+        System.out.println("here");
+    }
+}
+
+--> is this OK? is there a way to simplify?
+
+///////////////////
+
+Suppose "num" is a user input.
+
+    if (num < 3) {
+        double price = num*5.99;
+    }
+    else {
+        double price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
+
+What is this trying to do?
+
+Will it compile?
+
+////////////////////
+
+int answer;
+
+if (x < 0) {
+    answer = 7;
+}
+else if (answer >= 0) {
+    answer = 14;
+}
+
+System.out.printf("Answer is: %d%n", answer);
+
+
+What is this trying to do? Will it compile?
+
+////////////////////
+
+suppose "grade" is a user input (A/B/etc.)
+
+switch(grade) {
+    case 'A':
+        System.out.println("Meets standard");
+        break;
+    case 'B':
+        System.out.println("Meets standard");
+        break;
+    case 'C':
+        System.out.println("Meets standard");
+        break;
+    case 'D':
+        System.out.println("Doesn't meet standard");
+        break;
+    case 'F':
+        System.out.println("Doesn't meet standard");
+        break;
+    default:
+        System.out.println("Invalid option");
+        break;
+}
+
+
+What is the "break" for?
+
+Is there a way to simplify?
+
+How could we have done the same thing with an if/else if?
+
+////////////////////////
+
+Example: bags of chips are buy one get one free at the store.
+Full price is $5.99 each.
+
+Customers are limited to 10 bags total.
+
+(is there any other input that would be invalid?)
+
+////////////////////////
+
+Look at Project 2.
+
+////////////////////////
+
+Look at Lab 3.
