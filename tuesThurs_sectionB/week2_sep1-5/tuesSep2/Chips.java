@@ -12,5 +12,19 @@ public class Chips {
 
         (is there any other input that would be invalid?)
         */
+
+        System.out.print("Enter number of bags: ");
+        int bags = s.nextInt();
+
+        if (bags >= 0 && bags <= 10) {
+            int groupsOfTwo = bags/2;
+            int leftover = bags % 2;
+
+            double price = (groupsOfTwo + leftover) * 5.99;  
+            System.out.printf("Price: $%.2f%n", price); 
+        }
+        else {
+            System.out.println("Input should be between 0 and 10");
+        }
     }
 }

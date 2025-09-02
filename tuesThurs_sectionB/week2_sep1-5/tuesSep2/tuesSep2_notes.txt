@@ -5,6 +5,8 @@ Try to do tutorials before first lab of the week
 
 Lab 3: today
 
+    (NO CLASS this Thursday, September 4)
+
 Project 2: Friday, September 5
 
 /////////////////
@@ -27,6 +29,25 @@ if (y > 0) {
 
 --> is this OK? is there a way to simplify?
 
+if (y > 0 && y < 10) {
+    System.out.println("here");
+}
+
+
+
+///////////////////
+
+int x = 5;
+
+if (x < 10) {
+    System.out.println("one");
+}
+else if (x < 20) {
+    System.out.println("two");
+}
+
+What prints? JUST "one"
+
 ///////////////////
 
 Suppose "num" is a user input.
@@ -36,46 +57,67 @@ Suppose "num" is a user input.
     }
     else {
         double price = num*3.99;
+
     }
     System.out.printf("Total is: $%.2f%n", price);
 
 What is this trying to do?
 
-Will it compile?
+Will it compile? NO
+
+
+
+////////////////////
+
+Variable scope.
+
+in general, variables are ONLY visible inside the {}
+where they are declared
+
+    double price;
+    if (num < 3) {
+        price = num*5.99;
+    }
+    else {
+        price = num*3.99;
+    }
+    System.out.printf("Total is: $%.2f%n", price);
+
 
 ////////////////////
 
 int answer;
 
+//compilation error -- answer not initialized
+System.out.println(answer);
+
 if (x < 0) {
     answer = 7;
 }
-else if (answer >= 0) {
+else if (x >= 0) {
     answer = 14;
 }
 
+//won't compile -- compiler thinks answer not init.
 System.out.printf("Answer is: %d%n", answer);
 
 
 What is this trying to do? Will it compile?
 
-////////////////////
+--> rules for initializing variables
+
+
+////////////////////////
 
 suppose "grade" is a user input (A/B/etc.)
 
 switch(grade) {
     case 'A':
-        System.out.println("Meets standard");
-        break;
     case 'B':
-        System.out.println("Meets standard");
-        break;
     case 'C':
         System.out.println("Meets standard");
         break;
     case 'D':
-        System.out.println("Doesn't meet standard");
-        break;
     case 'F':
         System.out.println("Doesn't meet standard");
         break;
@@ -103,6 +145,25 @@ Customers are limited to 10 bags total.
 ////////////////////////
 
 Look at Project 2.
+
+get income
+subtract off the standard deduction
+
+keep running total of tax to pay
+update income as you apply rules
+
+//this is the if-statement for the first tax bracket
+if (income > 609351) {
+    double over = income - 609351;
+    double curTax = over*0.37;
+
+    tax += curTax;
+    income = 609351;
+}
+
+...
+then do exactly the same thing for the other
+tax brackets
 
 ////////////////////////
 
