@@ -18,6 +18,20 @@ Week 3 (next week):
 
 /////////////////
 
+int x = 0;
+
+if (x < 10) {
+    System.out.println("one");
+}
+else if (x < 20) {
+    System.out.println("two");
+}
+
+
+What prints?
+
+/////////////////
+
 
 if (y > 0) {
     if (y < 10) {
@@ -43,9 +57,18 @@ What is this trying to do?
 
 Will it compile?
 
+
+////////////////////
+
+Variable scope.
+
+
 ////////////////////
 
 int answer;
+
+//Will this compile?
+System.out.println(answer);
 
 if (x < 0) {
     answer = 7;
@@ -59,7 +82,11 @@ System.out.printf("Answer is: %d%n", answer);
 
 What is this trying to do? Will it compile?
 
-////////////////////
+
+--> rules for initializing variables
+
+
+////////////////////////
 
 suppose "grade" is a user input (A/B/etc.)
 
