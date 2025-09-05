@@ -1,0 +1,73 @@
+Normal structure this week:
+- Background reading
+- Tutorial 2 (due tonight, but hopefully already done)
+- Lab 4 (today), Lab 5 (Wednesday)
+- Project 3 (due Friday)
+
+////////////////////////
+
+Loops - what kinds? 
+
+For each kind of loop, get 5 numbers from user and 
+    print the sum.
+
+
+//Code fragment below
+
+Scanner s = new Scanner(System.in);
+
+//print sum of 5 user input numbers using each loop
+
+
+
+
+--> what if we only wanted to add the even numbers?
+
+////////////////////
+
+for (int i = 0; i < 10; i++) {
+    //do something
+}
+System.out.println(i);
+
+Is this OK?
+
+////////////////////
+
+break
+
+continue
+
+////////////////////
+
+Example: factorial
+
+Add input validation
+
+////////////////////
+
+Project 3 - change calculator
+
+Suppose change is 15.48. 
+
+--> how to find how many dollars?
+--> how to find how many cents?
+
+--> suppose dollars is 15
+--> how to find what bills to use?
+
+///////////////////////////////
+
+Random numbers.
+
+Example: repeatedly let user roll a die or quit.
+If they roll a 1, the game is over and they lose everything. 
+Otherwise, the die value gets added onto a running total.
+
+Print their total afterwards.
+
+///////////////////////////
+
+Lab 3.
+
+What is the structure?
