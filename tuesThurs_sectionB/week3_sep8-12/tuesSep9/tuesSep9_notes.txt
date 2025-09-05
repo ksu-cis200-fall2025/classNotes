@@ -1,7 +1,7 @@
 Normal structure this week:
 - Background reading
-- Tutorial 2 (due tonight, but hopefully already done)
-- Lab 4 (today), Lab 5 (Wednesday)
+- Tutorial 2 (due yesterday)
+- Lab 4 (today), Lab 5 (Thursday)
 - Project 3 (due Friday)
 
 ////////////////////////
