@@ -6,7 +6,7 @@ Normal structure this week:
 
 ////////////////////////
 
-Loops - what kinds? 
+Loops - what kinds? for, while, do-while 
 
 For each kind of loop, get 5 numbers from user and 
     print the sum.
@@ -18,10 +18,74 @@ Scanner s = new Scanner(System.in);
 
 //print sum of 5 user input numbers using each loop
 
+//while loop
+
+int count = 0; //how many inputs I've gotten
+int sum = 0; //the sum of the inputs so far 
+
+while (count < 5) {
+    System.out.print("Enter number: ");
+    int num = s.nextInt();
+    sum += num;
+    count++;
+}
+System.out.printf("The sum is %d%n", sum);
+
+
+
+
+// do-while loop
+
+int count = 0; //how many inputs I've gotten
+int sum = 0; //the sum of the inputs so far 
+
+do {
+    System.out.print("Enter number: ");
+    int num = s.nextInt();
+    sum += num;
+    count++;
+} while (count < 5); 
+System.out.printf("The sum is %d%n", sum);
+
+
+
+//for loop
+
+for (loop counter; condition; update) {
+    statements
+}
+
+
+int sum = 0; //the sum of the inputs so far 
+
+for (int count = 0; count < 5; count++) {
+    System.out.print("Enter number: ");
+    int num = s.nextInt();
+    sum += num;
+}
+System.out.printf("The sum is %d%n", sum);
+
 
 
 
 --> what if we only wanted to add the even numbers?
+
+
+int sum = 0; //the sum of the inputs so far 
+
+for (int count = 0; count < 5; count++) {
+    System.out.print("Enter number: ");
+    int num = s.nextInt();
+
+    if (num % 2 == 0) {
+        sum += num;
+    }
+}
+System.out.printf("The sum is %d%n", sum);
+
+
+
+
 
 ////////////////////
 
@@ -30,19 +94,41 @@ for (int i = 0; i < 10; i++) {
 }
 System.out.println(i);
 
-Is this OK?
+Is this OK? no
+
+
+
+
+
 
 ////////////////////
 
-break
+break - leave the loop
+
 
 continue
+
+
+////////////////////
+
+for loop: multiple loop counters
+
+
+for (int i = 2, int j = 7; i < 5 && j < 10; i++, j+=2) {
+
+}
+
+
 
 ////////////////////
 
 Example: factorial
 
+
+
 Add input validation
+
+
 
 ////////////////////
 
@@ -50,10 +136,24 @@ Project 3 - change calculator
 
 Suppose change is 15.48. 
 
---> how to find how many dollars?
---> how to find how many cents?
+--> how to find how many dollars? 15
 
---> suppose dollars is 15
+int dollars = (int) change;
+
+
+--> how to find how many cents? 48
+
+int coins = (int) ((change - dollars) * 100)
+
+
+
+--> suppose dollars is 45
+
+twenties = dollars / 20; //2 
+dollars = dollars % 20; //5
+
+
+
 --> how to find what bills to use?
 
 ///////////////////////////////
@@ -66,8 +166,32 @@ Otherwise, the die value gets added onto a running total.
 
 Print their total afterwards.
 
+(we skipped the above example, but would be good to do on your own)
+
+
+
+Random r = new Random(); //do this once
+
+int val = r.nextInt(5); //0,1,2,3,4
+
+
+
+int dice = r.nextInt(6) + 1;
+
+
 ///////////////////////////
 
 Lab 3.
 
 What is the structure?
+
+count
+user number
+computer number
+do {
+    ask for another user number
+    check that user number, print a response
+    add to our count (number of guesses)
+} while (they haven't entered 10 guesses and not correct)
+
+print the results

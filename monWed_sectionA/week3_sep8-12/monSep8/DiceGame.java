@@ -13,5 +13,7 @@ public class DiceGame {
         //otherwise, their roll is added to their score
 
         //print the overall score at the end
+
+        //we skipped this example, but would be good to do on your own
     }
 }
