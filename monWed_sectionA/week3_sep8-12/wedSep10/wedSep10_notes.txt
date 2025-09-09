@@ -1,0 +1,66 @@
+Project 3 due Friday, September 12
+
+
+Next week:
+- Background reading
+- Tutorial (3) due Monday
+- Lab on Monday (+ will do some review)
+- Exam 1 on Wednesday, September 17
+
+////////////////////////////
+
+What happens on each line?
+
+
+    double test = 3;
+
+    int score = test;
+
+    score = (int) test / 2;
+
+    char letter = 'A';
+
+    int example = letter;
+
+    letter = (char)(example+1);
+
+    letter = (char)(example++);
+
+    letter = (char)(++example);
+
+    double dec = example;
+
+
+////////////////////////
+
+Another loop example: dice game
+
+
+-> how could we let the user play again?
+
+--> how could we keep a best score?
+
+////////////////////////
+
+Divisibility check
+
+
+/////////////////////////
+
+Lab: get input number, print "prime" or a pair of factors
+
+
+7?
+24?
+29?
+36?
+
+
+How to get a pair of factors?
+
+
+What is the biggest number you need to check?
+
+
+boolean "flag" variables
+
