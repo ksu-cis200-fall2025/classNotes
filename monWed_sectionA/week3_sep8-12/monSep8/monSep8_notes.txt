@@ -114,7 +114,7 @@ continue
 for loop: multiple loop counters
 
 
-for (int i = 2, int j = 7; i < 5 && j < 10; i++, j+=2) {
+for (int i = 2, j = 7; i < 5 && j < 10; i++, j+=2) {
 
 }
 
