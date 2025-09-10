@@ -11,24 +11,30 @@ Next week:
 
 What happens on each line?
 
+    double first = 7; //is allowed, is stored like 7.0
 
-    double test = 3;
+    double test = 3.2; 
+    int score = test; //is not allowed
 
-    int score = test;
+    int score = (int) test; //score is 3
 
-    score = (int) test / 2;
+    score = (int) test / 2; //score is 1
+                            //the cast happens first
 
-    char letter = 'A';
+    char letter = 'A'; 
 
-    int example = letter;
+    int example = letter; //example is 65, the ASCII
+                            //value for 'A1
 
-    letter = (char)(example+1);
+    letter = (char)(example+1); //'B'
 
-    letter = (char)(example++);
+    letter = (char)(example++); //'A'
+        //now example is 66
 
-    letter = (char)(++example);
+    letter = (char)(++example); //'C'
+        //example is now 67
 
-    double dec = example;
+    double dec = example; //store 67.0
 
 
 ////////////////////////
@@ -44,19 +50,36 @@ Another loop example: dice game
 
 Divisibility check
 
+if (num % 2 == 0) {
+    //num is even
+}
+
+if (num % 5 == 0) {
+    //num is divisible by 5
+}
+
+
+
 
 /////////////////////////
 
-Lab: get input number, print "prime" or a pair of factors
+Lab: get input number, print "prime" or 
+    a pair of factors
 
 
-7?
-24?
-29?
-36?
+7? prime
+24? 2*12
+29? prime
+36? 2*18
 
 
 How to get a pair of factors?
+
+find ONE factor 
+
+for loop through factors: start looking at 2, up to Math.sqrt(num)
+    check the divisibility of the current factor
+        find pair by num/factor
 
 
 What is the biggest number you need to check?
