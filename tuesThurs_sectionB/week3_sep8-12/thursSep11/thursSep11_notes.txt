@@ -1,34 +1,51 @@
 Project 3 due Friday, September 12
 
+0.3 --> 0.30000000000004
+0.1 --> 0.09999999999999
+
+Math.round(double value )
 
 Next week:
 - Background reading
 - Tutorial (3) due Monday
 - Lab on Monday (+ will do some review)
-- Exam 1 on Wednesday, September 17
+- Exam 1 on Thursday, September 18
 
 ////////////////////////////
 
 What happens on each line?
 
 
-    double test = 3;
+    double another = 3; //OK! We don't lose any information
 
-    int score = test;
+    double test = 3.6;
 
-    score = (int) test / 2;
+    int score = test; //NO! Can't store a double as an int.
+
+    int score = (int) test; //But this is OK! Type casting. (score is 3)
 
     char letter = 'A';
 
-    int example = letter;
+    int example = letter; //is OK, stores the ASCII value (example is 65)
 
-    letter = (char)(example+1);
+    letter = (char)(example+1); //OK, letter is 'B'
 
-    letter = (char)(example++);
 
-    letter = (char)(++example);
+    letter = (char)(example++); //letter is 'A', then example is 66
 
-    double dec = example;
+    letter = (char)(++example); // example is 67, letter is 'C'
+
+    double dec = example; //dec is 67.0 
+
+
+Order of operations?
+
+int val = 17 - 4 - 5/2 + 17%3;
+
+parentheses
+multiplication *, division /, modulus %
+adding, subtracting
+
 
 
 ////////////////////////
@@ -45,18 +62,29 @@ Another loop example: dice game
 Divisibility check
 
 
+num divisible by 3
+
+if (num % 3 == 0)
+
 /////////////////////////
 
 Lab: get input number, print "prime" or a pair of factors
 
 
-7?
-24?
-29?
-36?
+7? prime
+24? 2*12
+29? prime
+25? 5*5
 
 
 How to get a pair of factors?
+
+24
+
+loop through possible factors, start at 2 up to Math.sqrt(num)
+
+    suppose you find a factor ("factor")
+    find the other factor by doing num/factor
 
 
 What is the biggest number you need to check?
