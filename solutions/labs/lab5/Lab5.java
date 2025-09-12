@@ -9,7 +9,6 @@ public class Lab5 {
 
         boolean prime = true;
         if (num >= 2) {
-            //it is OK to loop up to num instead
             for (int factor = 2; factor <= Math.sqrt(num); factor++) {
                 if (num % factor == 0) {
                     int otherFactor = num / factor;
