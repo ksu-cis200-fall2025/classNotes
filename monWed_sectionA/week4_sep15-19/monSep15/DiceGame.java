@@ -5,40 +5,54 @@ public class DiceGame {
         Scanner s = new Scanner(System.in);
         Random r = new Random();
 
-        char again;
-        int total = 0;
+        char moreGames;
+        int maxScore = 0;
         do {
-            //roll a dice
-            int roll = r.nextInt(6) + 1;
-            System.out.printf("You rolled %d%n", roll);
+            char again;
+            int total = 0;
+            do {
+                //roll a dice
+                int roll = r.nextInt(6) + 1;
+                System.out.printf("You rolled %d%n", roll);
 
-            //did they roll a 1?
-            if (roll == 1) {
-                total = 0;
-                System.out.println("Total is zeroed, game over.");
-                break;
+                //did they roll a 1?
+                if (roll == 1) {
+                    total = 0;
+                    System.out.println("Total is zeroed, game over.");
+                    break;
+                }
+                else {
+                    total = total + roll;
+                }
+                
+                System.out.printf("Your current total is %d%n", total);
+
+                //add it to total, update stuff
+                //do they want to go again?
+                System.out.print("Do you want to roll again? (y/n) ");
+                again = (s.nextLine().toLowerCase()).charAt(0);
+
+            } while (again == 'y');
+
+            //print end of game stuff
+            if (total >= 20) {
+                System.out.printf("Total: %d points. You win!%n", total);
             }
             else {
-                total = total + roll;
+                System.out.printf("Total: %d points. You lose.%n", total);
             }
-            
-            System.out.printf("Your current total is %d%n", total);
 
-            //add it to total, update stuff
-            //do they want to go again?
-            System.out.print("Do you want to roll again? (y/n) ");
-            again = (s.nextLine().toLowerCase()).charAt(0);
+            if (total > maxScore) {
+                maxScore = total;
+                System.out.println("New max score!");
+            }
+            else {
+                System.out.printf("Max score was %d%n", maxScore);
+            }
 
-        } while (again == 'y');
-
-        //print end of game stuff
-        if (total >= 20) {
-            System.out.printf("Total: %d points. You win!%n", total);
-        }
-        else {
-            System.out.printf("Total: %d points. You lose.%n", total);
-        }
-
+            System.out.print("Do you want to play another game? (y/n) ");
+            moreGames = (s.nextLine().toLowerCase()).charAt(0);
+        } while (moreGames == 'y');
         //game goal: get to at least 20 points 
         // (higher is better)
 
