@@ -1,0 +1,106 @@
+Tutorial 3 due tonight
+Lab today
+Exam 1: Thursday, September 18 during lab time
+No project this week
+
+--> next week will have a normal structure
+(background reading, tutorial, 2 labs, project)
+
+/////////////////////////
+
+Exam 1:
+- mix of multiple choice and open-ended
+- closed notes/computers, written exam 
+
+Topics:
+- structure of a Java program file
+- printing
+- variables and operations
+- user input
+- conditional statements
+- loops (including nested loops)
+
+See practice exam.
+    (work #3-5)
+
+
+Common multiple choice problem:
+- Figuring out the value of variables after pieces of code
+
+
+////////////////
+
+double val;
+
+<-- what value does val have now?
+
+
+/////////////////
+
+int total = 1;
+for (int i = 2; i < 7; i+=2) {
+    total += i;
+}
+
+<-- what value does i have?
+
+
+//////////////////
+
+int x = 4;
+int y = 2;
+while (x < 20) {
+    x = x + y;
+    y = y + 5;
+}
+
+--> what values do x and y have here?
+
+///////////////////
+
+What does "iteration" mean? 
+How many iterations of the while loop?
+
+///////////////////
+
+Nested loops.
+
+some outer loop {
+    some inner loop {
+
+    }
+}
+
+
+What order do things happen?
+
+/////////////////////
+
+for (int i = 2; i < 8; i++) {
+    for (int j = 1; j < i; j++) {
+        System.out.print(j);
+    }
+    System.out.println();
+}
+
+--> what prints?
+
+////////////////////
+
+Example, print this pattern:
+
+5
+4 5
+3 4 5
+2 3 4 5
+1 2 3 4 5
+
+/////////////////////
+
+Example: make dice game repeatable
+
+/////////////////////
+
+Lab.
+
+How to make sure you start printing an odd number?
