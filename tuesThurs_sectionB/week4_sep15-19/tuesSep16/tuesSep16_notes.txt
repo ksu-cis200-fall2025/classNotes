@@ -1,4 +1,4 @@
-Tutorial 3 due tonight
+Tutorial 3 due yesterday
 Lab today
 Exam 1: Thursday, September 18 during lab time
 No project this week
@@ -34,18 +34,9 @@ double val;
 
 <-- what value does val have now?
 
+it has no value 
 
 /////////////////
-
-int total = 1;
-for (int i = 2; i < 7; i+=2) {
-    total += i;
-}
-
-<-- what value does i have?
-
-
-//////////////////
 
 int x = 4;
 int y = 2;
@@ -56,10 +47,20 @@ while (x < 20) {
 
 --> what values do x and y have here?
 
+iteration   |    x      |   y 
+-----------------------------
+ 0          |   4       |   2
+ 1          |   6       |   7       
+ 2          |   13      |   12
+ 3          |   25      |   17
+
+
 ///////////////////
 
-What does "iteration" mean? 
-How many iterations of the while loop?
+What does "iteration" mean? one iteration is one time
+    through the code in the loop
+
+How many iterations of the while loop? 3
 
 ///////////////////
 
@@ -85,6 +86,15 @@ for (int i = 2; i < 8; i++) {
 
 --> what prints?
 
+1
+12
+123
+1234
+12345
+123456
+1234567
+
+
 ////////////////////
 
 Example, print this pattern:
@@ -94,6 +104,8 @@ Example, print this pattern:
 3 4 5
 2 3 4 5
 1 2 3 4 5
+
+(skipped - this would be a good practice problem)
 
 /////////////////////
 
