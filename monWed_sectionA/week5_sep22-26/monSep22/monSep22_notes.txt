@@ -24,13 +24,27 @@ Arrays.
 How to declare a size-5 array that can hold doubles?
 
 
+
+double[] nums = new double[5];
+
+
 What values are in it right now?
 
 
 How to put a 3.2 in the first spot and a 10.7 in the last spot?
+nums[0] = 3.2;
+nums[4] = 10.7;
 
 
 How to print the array?
+
+for (int i = 0; i < nums.length; i++) {
+    System.out.println(nums[i]);
+}
+
+
+//the memory address of the array
+System.out.println(nums);
 
 
 
@@ -40,7 +54,14 @@ Create an int array that holds the values 2,4,6,8,10
 
 First, hardcode it.
 
+int[] vals = {2,4,6,8,10};
+
 Then, write a loop.
+
+for (int i = 0; i < vals.length; i++) {
+    vals[i] = 2*(i+1);
+}
+
 
 //////////////////////////
 
