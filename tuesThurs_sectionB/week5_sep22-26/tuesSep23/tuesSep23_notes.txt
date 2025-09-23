@@ -23,14 +23,20 @@ Arrays.
 
 How to declare a size-5 array that can hold doubles?
 
+double[] nums = new double[5];
+
 
 What values are in it right now?
 
 
 How to put a 3.2 in the first spot and a 10.7 in the last spot?
+nums[0] = 3.2;
+nums[4] = 10.7;
 
 
 How to print the array?
+
+
 
 
 
@@ -38,9 +44,19 @@ How to print the array?
 
 Create an int array that holds the values 2,4,6,8,10
 
+int[] arr = {2,4,6,8,10}; 
+
+
 First, hardcode it.
 
 Then, write a loop.
+
+int[] arr = new int[5];
+for (int i = 0; i < arr.length; i++) {
+    arr[i] = i*2 + 2;
+}
+
+
 
 //////////////////////////
 
@@ -69,8 +85,8 @@ Example.
 
 Get 6 numbers from the user.
 
-Print whether any input number is the square of another 
-input number.
+Print pairs of input numbers where one number is the square of another number.
+
 
 //////////////////////////
 
