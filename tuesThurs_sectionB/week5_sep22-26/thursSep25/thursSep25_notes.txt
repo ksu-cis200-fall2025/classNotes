@@ -28,7 +28,7 @@ Two-dimensional arrays.
 
 Create a 7x3 array of doubles.
 
-Initialize first row to be: 1.0, 1.1, 1,2
+Initialize first row to be: 1.0, 1.1, 1.2
 Initialize the second row to be: 2.0, 2.1, 2.2
 ...etc.
 
@@ -71,3 +71,5 @@ How to right-shift?
     (in general) update each position to be...?
 
 What kind of loops are needed?
+
+Reminder: switching between types of input
