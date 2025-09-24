@@ -1,0 +1,73 @@
+Project 4 due Friday
+
+1) get list temperatures, store in array
+(code is given - why can't we use technique from lab?)
+
+2) find max difference between two adjacent days
+
+3) find longest increasing section 
+
+4) find most frequent temperature 
+
+///////////////////////////
+
+For-each loops
+
+int[] arr = {5,6,7,1,2,3};
+
+
+How to add up each element with a for-each loop?
+
+
+Can we reset each element to 0 with a for-each loop?
+
+
+///////////////////////////
+
+Two-dimensional arrays.
+
+Create a 7x3 array of doubles.
+
+Initialize first row to be: 1.0, 1.1, 1,2
+Initialize the second row to be: 2.0, 2.1, 2.2
+...etc.
+
+///////////////////////////
+
+Maybe we want to score 3 exam scores each for 30 students.
+
+--> How could we do this with a 2D array?
+
+--> How could we make the 10th student have exam scores 87, 76, 92?
+
+--> How could we print the class average on exam 2?
+
+
+//////////////////////////
+
+int[] test = {1,2,3,4};
+
+for (int i = 0; i < test.length; i++) {
+    test[i] = test[i+1];
+}
+
+We are trying to "left-shift" the array to be {2,3,4,1}
+
+Does the above code work?
+
+See Python tutor
+
+//////////////////////////
+
+Lab. 
+
+1) Create a 2D array with values 1, 2, ... that can be "read" like a book
+
+2) repeatedly right-shift each row until user wants to stop
+
+
+How to right-shift?
+    {1,2,3,4} becomes?
+    (in general) update each position to be...?
+
+What kind of loops are needed?
