@@ -45,25 +45,11 @@ Maybe we want to score 3 exam scores each for 30 students.
 
 //////////////////////////
 
-int[] test = {1,2,3,4};
-
-for (int i = 0; i < test.length; i++) {
-    test[i] = test[i+1];
-}
-
-We are trying to "left-shift" the array to be {2,3,4,1}
-
-Does the above code work?
-
-See Python tutor
-
-//////////////////////////
-
 Lab. 
 
 1) Create a 2D array with values 1, 2, ... that can be "read" like a book
 
-2) repeatedly right-shift each row until user wants to stop
+2) repeatedly left-shift each row until user wants to stop
 
 
 How to right-shift?
