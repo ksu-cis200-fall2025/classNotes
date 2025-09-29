@@ -20,13 +20,16 @@ for (int i = 0; i < second.length(); i++) {
 }
 
 
-...is there a better way?
+...is there a better way? StringBuilder
 
 
-/////////////////////////
+StringBuilder result = new StringBuilder(first);
 
-Plus vs. concatenation.
+for (int i = 0; i < second.length(); i++) {
+    result.append(second.charAt(i));
+}
 
+String builtUp = result.toString();
 
 /////////////////////////
 
@@ -35,20 +38,39 @@ String example = "september";
 
 --> How to get just the "ept"?
 
+String piece = example.substring(1,4)
+
 --> How to get just the "er"?
 
+String piece2 = example.substring(7);
+
+OR:
+
+String piece2 = example.substring(7,9);
+
 --> How to get just the "s"?
+
+String front = example.substring(0,1); //"s"
+char first = example.charAt(0); //'s'
+
 
 /////////////////////////
 
 String split.
 
-String big = "This is a sentence.";
+String big = "This  is a sentence.";
 
 
 --> How to get the individual words in an array?
 
+String[] tokens = big.split(" ");
+
+(tokens would be {"This", "is", "a", "sentence."})
+
 --> How to make sure it works with multiple spaces in a row?
+
+String[] tokens = big.split("\\s+");
+
 
 
 /////////////////////////
@@ -62,6 +84,17 @@ Project 5 - Wordle.
 How to play?
 
 What do the colors mean?
+
+
+    example correct word: point
+    example guess: pilot
+
+    output?? GYBYG
+
+    how to check each letter?
+
+    **special case if the guess contains duplicate letters
+
 
 What do the input files mean?
 
