@@ -1,4 +1,4 @@
-Tutorial 5 due tonight
+Tutorial 5 due yesterday
 
 2 labs this week
 
@@ -12,6 +12,14 @@ Strings.
 String first = "hello";
 String second = "goodbye";
 
+How to print all the characters in first?
+
+for (int i = 0; i < first.length(); i++) {
+    System.out.println(first.charAt(i));
+}
+
+
+
 
 What is this doing?
 
@@ -19,13 +27,20 @@ for (int i = 0; i < second.length(); i++) {
     first += second.charAt(i);
 }
 
+first will be: "hellogoodbye"
 
-...is there a better way?
 
 
-/////////////////////////
+...is there a better way? very inefficient
 
-Plus vs. concatenation.
+use StringBuilder!
+
+StringBuilder build = new StringBuilder(first);
+for (int i = 0; i < second.length(); i++) {
+    build.append(second.charAt(i));
+}
+
+String result = build.toString();
 
 
 /////////////////////////
@@ -35,25 +50,38 @@ String example = "september";
 
 --> How to get just the "ept"?
 
+String part1 = example.substring(1,4);
+
 --> How to get just the "er"?
 
+String part2 = example.substring(7,9);
+part2 = example.substring(7);
+
 --> How to get just the "s"?
+
+char first = example.charAt(0); // 's'
+String front = example.substring(0,1); // "s"
 
 /////////////////////////
 
 String split.
 
-String big = "This is a sentence.";
+String big = "This  is a sentence.";
 
 
 --> How to get the individual words in an array?
+
+String[] pieces = big.split("\\s+");
+
+pieces: {"This", "is", "a", "sentence."}
+
 
 --> How to make sure it works with multiple spaces in a row?
 
 
 /////////////////////////
 
-File example - Sep29.java
+File example - Sep30.java
 
 ////////////////////////
 
@@ -66,6 +94,21 @@ What do the colors mean?
 What do the input files mean?
 
 What to do first?
+
+read in puzzles input file into a String[]
+read in allowed input file into a String[]
+randomly generate a position in the puzzles array - that's your 
+    correct word
+
+loop to get 6 guesses from the user
+    get a guess
+    check if it is valid (look in both arrays)
+    if it is valid, print the feedback
+        do G feedback first
+        do B feedback next
+            look through correct word, use boolean to
+                keep track of whether you found it     
+        do Y feedback last
 
 ///////////////////////
 
