@@ -4,8 +4,32 @@ Guesses with duplicate letters.
 
 correct: "enemy"
 guess: "geese"
+feedback: BYGBB
 
+correct: "glove"
+guess: "ledge"
 
+char[] feedback (fill with B/Y/G for each guess letter)
+boolean[] used (mark which of the correct letter I've already
+                    matched with)
+
+Step 1: figure out the G feedback
+for each exact match, put a G at that position in feedback
+    mark that same spot in used to be true
+
+Step 2: figure out the Y/B feedback
+loop through all the guess letters (i)
+    if that guess letter is marked as a G, skip it 
+
+    match = false
+    loop through all correct letters (j)
+        if guess[i] == correct[j] and used[j] is false  
+            match = true
+            set used[j] to true
+            break
+
+    if match is false, feedback[i] should be B 
+    else feedback[i] should be Y
 
 /////////////////////
 
@@ -17,9 +41,44 @@ String s2 = (some user input);
 
 How to tell if s1 and s2 have the same characters?
 
+if (s1 == s2) {
+    //compares memory addresses, will likely return false
+}
 
+if (s1.equals(s2)) {
+    //this compares character by character
+}
+
+s1 is "Apple"
+s2 is "apple"
+
+
+using .equals would say false (not exactly the same characters)
+
+Instead:
+
+if (s1.toLowerCase().equals(s2.toLowerCase())) {
+    //converts both to lower
+}
+
+OR:
+
+if (s1.equalsIgnoreCase(s2)) {
+    //treats upper and lower as the same
+}
 
 How to print s1 and s2 in alphabetical order?
+
+if (s1.compareTo(s2) < 0) {
+    //read as : s1 < s2
+}
+else if (s1.compareTo(s2) > 0) {
+    //read as : s1 > s2
+}
+else {
+    //compareTo returns 0
+    //equals would return true
+}
 
 
 /////////////////////
@@ -29,10 +88,14 @@ indexOf.
 
 String test = "explanation";
 
-int index1 = test.indexOf("ana");
-int index2 = test.indexOf("a");
-int index3 = test.indexOf("one");
-int index4 = test.indexOf("a", 5);
+int index1 = test.indexOf("ana"); //index1 would be 4, where "ana" begins
+
+int index2 = test.indexOf("a"); //index2 is 4, since the FIRST "a" is at spot 4
+
+int index3 = test.indexOf("one"); //index3 is -1, since "one" is not found
+
+int index4 = test.indexOf("a", 5); //index4 is 6 since the first "a" starting from 
+                                    //position 5 is at position 6
 
 //////////////////////
 
@@ -71,6 +134,8 @@ Read each line
     How to find the corresponding filename?
 
     How to look for a " ?
+
+    s1.indexOf("\"");
 
     What if there are multiple image elements on the same line?
 
