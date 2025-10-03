@@ -1,0 +1,43 @@
+Tutorial 6 due tonight
+Labs today and Wednesday
+Project 6 due Friday, October 10
+
+(Connect 4)
+
+/////////////////////////////////////
+
+Why write separate methods?
+
+
+Syntax for declaring a method:
+
+
+/////////////////////////////////////
+
+Oct6.java - practice writing and calling methods
+
+////////////////////////////////////
+
+Value types vs reference types.
+
+
+////////////////////////////////////
+
+Call-by-value vs call-by-reference
+
+
+/////////////////////////////////////
+
+Global variables.
+
+
+//////////////////////////////////////
+
+Constants.
+
+
+//////////////////////////////////////
+
+See lab 11.
+
+What should each method header look like?
