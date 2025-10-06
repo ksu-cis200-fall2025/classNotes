@@ -11,6 +11,8 @@ Why write separate methods?
 
 Syntax for declaring a method:
 
+public static returnType methodName(type paramName, ....)
+
 
 /////////////////////////////////////
 
@@ -20,24 +22,62 @@ Oct6.java - practice writing and calling methods
 
 Value types vs reference types.
 
+value types (int, double, char, boolean)
+    int x = 4;
+
+reference type (arrays, Strings, StringBuilder, Scanner, PrintWriter)
+    int[] arr = new int[5];
+
 
 ////////////////////////////////////
 
 Call-by-value vs call-by-reference
+
+public static void toZero(int num) {
+    num = 0;
+}
+
+public static void arrZero(int[] nums) {
+    /*
+    for (int i = 0; i < nums.length; i++) {
+        nums[i] = 0;
+    }
+    */
+
+    nums = new int[nums.length];
+}
+
+int x = 7
+setZero(x);
+int[] vals = {1,2,3};
+arrZero(vals);
+
 
 
 /////////////////////////////////////
 
 Global variables.
 
+defined outside any method but still inside the class
+
+public static type name;
+
+can access in any method in the class
+
 
 //////////////////////////////////////
 
 Constants.
 
+public static final int SIZE = 3;
+
+
+SIZE can't change value
 
 //////////////////////////////////////
 
 See lab 11.
 
 What should each method header look like?
+
+public static int[] toArray(String str)
