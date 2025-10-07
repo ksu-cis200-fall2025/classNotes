@@ -11,6 +11,8 @@ Why write separate methods?
 
 Syntax for declaring a method:
 
+public static returnType methodName(type paramName, ...)
+
 
 /////////////////////////////////////
 
@@ -20,20 +22,61 @@ Oct6.java - practice writing and calling methods
 
 Value types vs reference types.
 
+value type: data itself is stored at that variable location in memory
+    (ints, doubles, floats, chars, booleans)
+
+reference type: that variable location stores a memory address (a reference)
+    to some other information in memory
+
+    (arrays, Strings)
+
+    int[] stuff = {1,2,3};
+
+
 
 ////////////////////////////////////
 
 Call-by-value vs call-by-reference
+
+public static void zeroNum(int num) {
+    num = 0;
+}
+
+public static void zeroArray(int[] nums) {
+    /*
+    for (int i = 0; i < nums.length; i++) {
+        nums[i] = 0;
+    }
+    */
+
+    nums = new int[nums.length];
+}
+
+int x = 4;
+zeroNum(x);
+
+int[] stuff = {1,2,3};
+zeroArray(stuff);
+
+
 
 
 /////////////////////////////////////
 
 Global variables.
 
+define inside the class but outside any method
+
+public static type name;
+
+public static int count;
+
 
 //////////////////////////////////////
 
 Constants.
+
+public static final int SIZE = 10;
 
 
 //////////////////////////////////////
