@@ -6,21 +6,54 @@ Exam 2 is next Wednesday, October 15
 
 Connect 4.
 
-Suppose we our game board:
+Suppose we have this game board and these dimensions:
 
     public static char[][] board;
+    public static final int ROWS = 6;
+    public static final int COLS = 7;
+
 
 User enters a column number. How do we tell if it is full?
 
+see if top of column has something in it
+board[0][user input col]
 
 
 How do we "drop" a piece in the column?
 
+loop backward up that column
+
+for (int i = ROWS-1; i >= 0; i--) {
+    see if board[i][user input col] if empty
+        if it is, put my piece there
+        break;
+}
 
 
 
 How do we check for a winner?
+    4 in a row 
+    4 in a column 
+    4 diagonally \ and /
 
+
+Check 4 in a row.
+
+for (int i = 0; i < ROWS; i++) {
+    loop over possible STARTS of 4 on that row
+    for (int j = 0; j <= COLS - 4; j++) {
+        see if board[i][j], board[i][j+1], 
+            board[i][j+2], board[i][j+3] are all the same (and not empty)
+    }
+}
+
+
+for diagonals, use nested loops to loop over possible starting
+positions
+
+(say, possible top left corners for \ diagonal)
+
+compare [i][j], [i+1][j+1], [i+2][j+2], [i+3][j+3]
 
 
 ///////////////////////
