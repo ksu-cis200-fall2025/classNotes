@@ -1,0 +1,78 @@
+Project 6 due Friday
+Exam 2 is next Thursday, October 16
+    (will post review material)
+
+/////////////////////////////////////////
+
+Connect 4.
+
+Suppose we have:
+
+    public static char[][] board;
+    public static final int ROWS = 6;
+    public static final int COLS = 7;
+
+
+User enters a column number. How do we tell if it is full?
+
+board[0][user input column] is not empty, then the column is full
+
+
+
+How do we "drop" a piece in the column?
+
+    loop backwards up the column
+    for (int i = ROWS-1; i >= 0; i--) {
+        see if board[i][user input column] is empty.
+            if it is, put the piece there and break.
+    }
+
+
+
+How do we check for a winner?
+
+four in a row 
+    for (int i = 0; i < ROWS; i++) {
+        //loop through possible leftmost values on that row
+        for (int j = 0; j < COLS-4; j++) {
+            see if board[i][j], board[i][j+1], 
+                board[i][j+2], board[i][j+3] all match a piece
+        }
+    }
+
+
+four in a column  (similar)
+
+
+four on \ diagonal
+    nested loop over possible upper-left starts of \
+        see if board[i][j], board[i+1][j+1],
+            board[i+2][j+2], board[i+3][j+3]
+
+
+four on / diagonal
+
+
+
+///////////////////////
+
+Reorganizing code into methods.
+
+- Identify repeated code
+
+- Identify related code that can be "chunked"
+
+- Goals: 
+    - methods aren't much longer than a screen
+    - can easily see program flow from the main method
+    - no duplicate code
+
+
+
+Example: reorganize project 5 (Wordle) into methods
+
+
+
+////////////////////////////
+
+Lab 12: reorganize Tic-Tac-Toe tutorial into methods
