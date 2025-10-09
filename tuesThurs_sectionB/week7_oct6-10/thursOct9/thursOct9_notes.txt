@@ -34,7 +34,7 @@ How do we check for a winner?
 four in a row 
     for (int i = 0; i < ROWS; i++) {
         //loop through possible leftmost values on that row
-        for (int j = 0; j < COLS-4; j++) {
+        for (int j = 0; j < COLS-3; j++) {
             see if board[i][j], board[i][j+1], 
                 board[i][j+2], board[i][j+3] all match a piece
         }
