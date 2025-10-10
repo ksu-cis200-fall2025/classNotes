@@ -1,0 +1,49 @@
+Tutorial due yesterday
+Exam 2 is Thursday, October 16
+No project this week
+
+(Next week will have a normal structure)
+
+///////////////////////////
+
+Exam 2 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- Arrays (single dimension and 2D)
+- Strings
+- Text file IO
+- Methods
+
+
+///////////////////////////
+
+Work practice problems
+
+///////////////////////////
+
+Command-line arguments
+
+Example: want to give a word and a number as command line arguments
+
+--> print the first letter of the word
+--> print one more than the number
+
+--> problems with commas and parentheses
+
+////////////////////////////
+
+Writing methods in other classes.
+
+--> when do we include a main method?
+
+--> how to call methods in another file?
+
+--> how to call methods in the SAME file?
+
+////////////////////////////
+
+Lab 13.
+
