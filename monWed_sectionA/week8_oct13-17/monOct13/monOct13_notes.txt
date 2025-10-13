@@ -40,8 +40,16 @@ Writing methods in other classes.
 --> when do we include a main method?
 
 --> how to call methods in another file?
+    ClassName.methodName(parameters);
 
 --> how to call methods in the SAME file?
+    methodName(parameters);
+
+--> visibility modifiers
+
+private: can only be seen in the same class 
+
+public: can be seen in the same class and in other classes
 
 ////////////////////////////
 
