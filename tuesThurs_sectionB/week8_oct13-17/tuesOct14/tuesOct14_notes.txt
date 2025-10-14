@@ -37,11 +37,24 @@ Example: want to give a word and a number as command line arguments
 
 Writing methods in other classes.
 
---> when do we include a main method?
+--> when do we include a main method? when I want to execute
 
 --> how to call methods in another file?
 
+    ClassName.methodName(params);
+
 --> how to call methods in the SAME file?
+
+    ClassName.methodName(params);
+
+    OR:
+
+    methodName(params);
+
+--> visibility modifiers
+
+public: method or variable is visible in this class and outside the class
+private: method or variable is ONLY visible in this class 
 
 ////////////////////////////
 
