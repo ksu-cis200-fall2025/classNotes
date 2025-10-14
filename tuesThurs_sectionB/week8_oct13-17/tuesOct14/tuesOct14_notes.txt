@@ -43,6 +43,8 @@ Writing methods in other classes.
 
 --> how to call methods in the SAME file?
 
+--> visibility modifiers
+
 ////////////////////////////
 
 Lab 13.
