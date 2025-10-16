@@ -1,0 +1,34 @@
+Tutorial due tonight
+Labs today and Wednesday
+Project 7 due Friday, October 24
+
+////////////////////////
+
+Discuss Exam 2
+
+////////////////////////
+
+Procedural programming
+
+Object-oriented programming
+
+/////////////////////////
+
+Why define general classes?
+
+Parts of a general class:
+
+
+////////////////////////
+
+Example: complete the Circle class
+
+Create objects, call methods
+
+////////////////////////
+
+Example: *start* the Fraction class
+
+////////////////////////
+
+Lab 13.
