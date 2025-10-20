@@ -4,7 +4,7 @@ Project 7 due Friday, October 24
 
 ////////////////////////
 
-Discuss Exam 2
+Exam 2 update
 
 ////////////////////////
 
@@ -17,6 +17,12 @@ Object-oriented programming
 Why define general classes?
 
 Parts of a general class:
+
+field - whatever information they need to store about themselves
+    (length/width for a rectangle)
+constructor - sets up a new one of these types, takes in information
+    to initialize the fields
+operations / methods (area/perimeter)
 
 
 ////////////////////////
@@ -37,8 +43,8 @@ Lab 14 instructions:
     - Fields: x and y coordinate (doubles)
     - Constructor to initialize fields 
     - print method (prints like "(0.53, 6.00)")
-    - midpoint method (takes another Point as a parameter, returns the midpoint
-        between this point and the parameter)
+    - midpoint method (takes another Point as a parameter, 
+        returns the midpoint between this point and the parameter)
     - quadrant method: returns 1,2,3, or 4
         1: upper-right
         2: upper-left
@@ -47,7 +53,9 @@ Lab 14 instructions:
 
 2) Write Lab14 class with main method
     - Create the point (-2, 7)
-    - Get user input for the coordinates for a second point, create that point
+    - Get user input for the coordinates for a second point, 
+        create that point
     - Print both points
-    - Get the midpoint between those two points and print initialize
-    - Get (and print) the quadrant of the two points and the midpoint
+    - Get the midpoint between those two points and print it
+    - Get (and print) the quadrant of the two points 
+        and the midpoint
