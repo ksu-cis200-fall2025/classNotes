@@ -4,6 +4,17 @@ Project 7 due Friday, October 24
 
 ////////////////////////
 
+Exam 2 results.
+
+High: 50/50
+Average: 38/50
+
+A (45-50): 7 students
+B (40-44): 11 students
+C (35-39): 3 students
+D (30-34): 5 students
+F (below 30): 5 students
+
 Discuss Exam 2
 
 ////////////////////////
@@ -18,6 +29,10 @@ Why define general classes?
 
 Parts of a general class:
 
+1) fields 
+2) constructor - initialize the fields 
+3) methods
+
 
 ////////////////////////
 
@@ -31,23 +46,4 @@ Example: *start* the Fraction class
 
 ////////////////////////
 
-Lab 14 instructions:
-
-1) Write General "Point" class 
-    - Fields: x and y coordinate (doubles)
-    - Constructor to initialize fields 
-    - print method (prints like "(0.53, 6.00)")
-    - midpoint method (takes another Point as a parameter, returns the midpoint
-        between this point and the parameter)
-    - quadrant method: returns 1,2,3, or 4
-        1: upper-right
-        2: upper-left
-        3: lower-left
-        4: lower-right
-
-2) Write Lab14 class with main method
-    - Create the point (-2, 7)
-    - Get user input for the coordinates for a second point, create that point
-    - Print both points
-    - Get the midpoint between those two points and print initialize
-    - Get (and print) the quadrant of the two points and the midpoint
+Lab 14
