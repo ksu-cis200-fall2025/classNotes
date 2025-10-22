@@ -1,3 +1,19 @@
+Exam 2 results.
+
+High: 50/50
+Average: 38/50
+
+A (45-50): 7 students
+B (40-44): 11 students
+C (35-39): 3 students
+D (30-34): 5 students
+F (below 30): 5 students
+
+Discuss Exam 2
+
+
+//////////////////////////////////
+
 Project 7 due Friday
 
 Evaluate a polynomial
@@ -18,11 +34,23 @@ static variables (revisit 3.14)
 
 ///////////////////////////////////
 
+getter/setter methods
+
+
+
+relate to fields
+
+
+///////////////////////////////////
+
 "this" keyword
 
 ////////////////////////////////////
 
 Arrays of objects
+
+
+
 
 null keyword
 
