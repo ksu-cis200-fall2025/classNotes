@@ -1,0 +1,59 @@
+Tutorial due tonight
+Labs today and Wednesday
+Project 8 due Friday
+
+/////////////////////
+
+Today:
+- Model-View-Controller
+- Exception handling
+
+//////////////////////
+
+Program design.
+
+Model-View-Controller (MVC).
+
+Model:
+
+View:
+
+Controller:
+
+///////////////////////
+
+Example: 
+- revisit Tic-Tac-Toe
+- update to use MVC
+
+What should go in the model?
+What should go in the view?
+What should go in the controller?
+
+////////////////////////
+
+Exception handling.
+
+What happens when they type something other than a number?
+
+How to recover?
+
+Where should we handle the problem?
+
+/////////////////////////
+
+Lab 16. 
+
+Shift cipher - example.
+
+ASCII values
+
+'A' - 'Z' : 65-90
+'a' - 'a' : 97-122
+
+char letter = (some letter);
+int key = (some number, 0-25);
+
+How to encrypt letter?
+
+How to decrypt letter?
