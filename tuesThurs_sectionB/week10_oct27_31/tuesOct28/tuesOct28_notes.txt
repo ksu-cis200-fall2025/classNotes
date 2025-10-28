@@ -14,12 +14,13 @@ Program design.
 
 Model-View-Controller (MVC).
 
-Model: store data, do calculations
+Model: store data, do operations
 
-View: user interaction (input, display)
+View: input and output
 
-Controller: control flow of the program
-    (go back and forth between model and view)
+Controller: controls flow of program, calls 
+    methods in model and view
+
 
 ///////////////////////
 
@@ -49,10 +50,15 @@ Shift cipher - example.
 
 "ball"
 key (0-25): 3
+"edoo"
+
+decrypt: "edoo", key 3
 
 
-encrypt "zebra"
+
+encrypt "zybra"
 key: 3
+"c..."
 
 
 
@@ -60,7 +66,7 @@ key: 3
 ASCII values
 
 char example = 'A';
-example++;
+example++; //example would be 'B'
 
 
 
@@ -69,6 +75,16 @@ char letter = (some letter);
 int key = (some number, 0-25);
 
 How to encrypt letter?
+
+//is it lowercase
+if (letter >= 'a' && letter <= 'z') {
+    letter += key;
+
+    if (letter > 'z') {
+        letter -= 26;
+    }
+}
+
 
 How to decrypt letter?
 
