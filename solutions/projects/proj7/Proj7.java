@@ -1,3 +1,11 @@
+/**
+ * Proj7 gets input for two polynomials from the user and 
+ * performs various operations on them.
+ * 
+ * @author Julie Thornton
+ * @version Project 7
+ */
+
 import java.util.*;
 import java.io.*;
 
