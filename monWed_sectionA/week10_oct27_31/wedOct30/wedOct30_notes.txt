@@ -15,7 +15,7 @@ Wumpus World.
 User starts in lower-left (has arrow, doesn't have gold)
 Randomly placed Wumpus
 Randomly placed gold
-Each non-start/gold position has 10% chance of having a position
+Each non-start/gold position has 10% chance of having a pit 
 
 
 Each turn, user can:
@@ -61,4 +61,4 @@ How to give View the filtered result to print?
 
 ///////////////////////
 
-Lab 16.
+Lab 17.
