@@ -1,50 +1,10 @@
 Project 8 due Friday
 
-/////////////////
-
-Today:
-- Project 8 structure
-- ResizeableArray
-
-//////////////////
-
 Wumpus World.
 
-4-6 by 4-6
+Arrow considerations
 
-User starts in lower-left (has arrow, doesn't have gold)
-Randomly placed Wumpus
-Randomly placed gold
-Each non-start/gold position has 10% chance of having a pit 
-
-
-Each turn, user can:
-Move (left, right, up, down)
-Shoot (left, right, up, down)
-Pick up gold
-Climb out 
-
-Get info before each move:
-Feel breeze if adjacent to pit 
-Smell stench if adjacent to Wumpus
-See glitter if ON gold
-
-Goal: kill Wumpus, pick up gold, climb out 
-
-
-Classes:
-Cell: hasWumpus, hasGold, hasPit fields, plus getters/setters
-Player: hasArrow, hasGold, row/col
-Board: 2D array of Cell, Player, randomly constructs
-    grab gold, climb, info on player location, move player,
-    shoot arrow
-View: all input/output methods
-Proj8: control flow
-
-**must have a "cheat mode"
-
-
-//////////////////////
+/////////////////
 
 ResizeableArray
 
@@ -62,3 +22,5 @@ How to give View the filtered result to print?
 ///////////////////////
 
 Lab 17.
+
+GPA input suggestion
