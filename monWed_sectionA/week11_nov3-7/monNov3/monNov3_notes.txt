@@ -1,0 +1,25 @@
+Tutorial due tonight
+Labs today and Wednesday
+Project 9 due Friday
+
+//////////////////////
+
+- Recommend coming to office hours if didn't finish lab(s)
+- Lab solutions are in the classNotes repo
+
+//////////////////////
+
+Inheritance.
+
+Idea?
+
+See Vehicle class.
+
+How to make Car class?
+
+How to make Bicycle class?
+
+///////////////////////
+
+Lab 18.
+
