@@ -1,7 +1,21 @@
 public class Book {
     //Fields for the title, author, publication year, and number of pages
-    
+    protected String title;
+    protected String author;
+    protected int year;
+    protected int pages;
+
     //constructor to initialize fields
+    public Book(String t, String a, int y, int p) {
+        //initialize all
+    }
+
+    public double price() {
+        if (pages >= 300) {
+            double extraPagePrice = ((pages-300)/100 + 1)*0.25;
+        }
+        
+    }
     
     //A price method
     //  Books published <= 2015:  

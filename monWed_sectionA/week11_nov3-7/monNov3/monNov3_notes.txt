@@ -7,17 +7,22 @@ Project 9 due Friday
 - Recommend coming to office hours if didn't finish lab(s)
 - Lab solutions are in the classNotes repo
 
+
+How many regularly use a Mac? 1
+
+How many are planning to take CIS 300 in the spring? most or all
+
 //////////////////////
 
 Inheritance.
 
 Idea?
 
-See Vehicle class.
+See Person class.
 
-How to make Car class?
+How to make Student class?
 
-How to make Bicycle class?
+How to make Employee class?
 
 ///////////////////////
 

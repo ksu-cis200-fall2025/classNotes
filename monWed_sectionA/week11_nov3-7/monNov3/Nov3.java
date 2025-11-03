@@ -1,10 +1,9 @@
 public class Nov3 {
     public static void main(String[] args) {
-        //create a Vehicle
-        //create a Car
-        //create a Bicycle
-        //call methods
+        //create Person/Student/Employee objects
 
-        //can we store in an array?
+        Person s = new Student("Bob", 20, "MATH", 3.5);
+        s.birthday();
+        System.out.println(s);
     }
 }
