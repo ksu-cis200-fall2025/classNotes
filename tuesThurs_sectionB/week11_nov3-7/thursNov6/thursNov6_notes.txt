@@ -1,0 +1,60 @@
+Project 9 due Friday
+
+RealNumber, RationalNumber, IntegerNumber
+
+real field?
+
+rational fields?
+
+integer fields?
+
+
+Real operations:
+
+    public Real plus(Real another) {
+        
+    }
+
+
+
+Rational operations:
+
+    public Real plus(Real another) {
+        
+    }
+
+
+Integer operations:
+
+    public Real plus(Real another) {
+        
+    }
+
+
+
+
+Input is like: 
+2/6+ 3/4
+0.57 -4
+
+
+
+What to look for first?
+
+Then how to tell what kind of number?
+
+How to tell if invalid?
+
+
+///////////////////
+
+enums
+
+
+////////////////////
+
+Look at lab 19 start.
+
+What information is common?
+
+What operations are common?
