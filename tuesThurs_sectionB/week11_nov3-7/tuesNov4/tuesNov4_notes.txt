@@ -13,11 +13,11 @@ Inheritance.
 
 Idea?
 
-See Vehicle class.
+See Person class.
 
-How to make Car class?
+How to make Student class?
 
-How to make Bicycle class?
+How to make Employee class?
 
 ///////////////////////
 
