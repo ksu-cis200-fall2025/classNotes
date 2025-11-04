@@ -1,6 +1,6 @@
 public class Person {
-    private String name;
-    private int age;
+    protected String name;
+    protected int age;
 
     public Person(String n, int a) {
         name = n;

@@ -1,16 +1,13 @@
 //what should we do with Person?
 
-public class Employee {
+public class Employee extends Person {
     //want name, age, job title, salary
 
-    private String name;
-    private int age;
     private String title;
     private double salary;
 
     public Employee(String n, int a, String t, double s) {
-        name = n;
-        age = a;
+        super(n, a);
         title = t;
         salary = s;
     }
