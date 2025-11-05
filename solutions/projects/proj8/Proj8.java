@@ -1,3 +1,12 @@
+/**
+ * Project 8 plays a random game of Wumpus world with an optional cheat mode.
+ * Run as: java Proj8 --cheat 
+ * To enter cheat mode.
+ * 
+ * @author Julie Thornton
+ * @version Project 8
+ */
+
 public class Proj8 {
 	public static void main(String[] args) {
 		Board b = new Board();

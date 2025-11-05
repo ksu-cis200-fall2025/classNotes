@@ -1,3 +1,11 @@
+/**
+ * Board represents the board in Wumpus world
+ * 
+ * @author Julie Thornton
+ * @version Project 8
+ */
+
+
 import java.util.*;
 
 public class Board {
@@ -9,6 +17,9 @@ public class Board {
 	private boolean exit;
 	private boolean wumpusDead;
 
+	/**
+	 * Constructs a new (random) game board for Wumpus world
+	 */
 	public Board() {
 		Random r = new Random();
 		exit = false;
@@ -59,6 +70,11 @@ public class Board {
 		}
 	}
 	
+	/**
+	 * Returns whether the player has been eaten by the Wumpus
+	 * 
+	 * @return Whether the player has been eated by the Wumpus
+	 */
 	public boolean amEaten() {
 		int r = player.getRow();
 		int c = player.getCol();
@@ -67,6 +83,11 @@ public class Board {
 		else return false;
 	}
 	
+	/**
+	 * Returns whether the player has fallen into a pit
+	 * 
+	 * @return Whether the player has fallen into a pit
+	 */
 	public boolean fallen() {
 		int r = player.getRow();
 		int c = player.getCol();
@@ -75,23 +96,47 @@ public class Board {
 		else return false;
 	}
 	
+	/**
+	 * Returns whether the Wumpus has been killed
+	 * 
+	 * @return Whether the Wumpus has been killed
+	 */
 	public boolean wumpusGone() {
 		return wumpusDead;
 	}
 	
+	/**
+	 * Returns whether the player has escaped (climbed out)
+	 * 
+	 * @return Whether the player has escaped
+	 */
 	public boolean escaped() {
 		return exit;
 	}
 	
+	/**
+	 * Returns whether the player has the gold
+	 * 
+	 * @return Whether the player has the gold
+	 */
 	public boolean hasGold() {
 		return player.hasGold();
 	}
 	
+	/**
+	 * Returns whether the player still has the arrow
+	 * 
+	 * @return Whether the player has the arrow
+	 */
 	public boolean hasArrow() {
 		return player.hasArrow();
 	}
 	
-	//grab gold method
+	/**
+	 * Makes the player grab the gold in their current location
+	 * 
+	 * @return Whether the player successfully grabbed the gold
+	 */
 	public boolean grabGold() {
 		if (game[player.getRow()][player.getCol()].containsGold()) {
 			game[player.getRow()][player.getCol()].grabGold();
@@ -101,6 +146,11 @@ public class Board {
 		else return false;
 	}
 	
+	/**
+	 * Makes the player attempt to climb out
+	 * 
+	 * @return Whether the player sucesssfully climbed out (only possible in bottom left)
+	 */
 	public boolean climb() {
 		if (player.getRow() == exitRow && player.getCol() == exitCol) {
 			exit = true;
@@ -109,7 +159,11 @@ public class Board {
 		else return false;
 	}
 
-	//return precepts
+	/**
+	 * Gets a string describing the precepts for the current game state
+	 * 
+	 * @return A string describing the precepts for the current board
+	 */
 	public String evaluateSpot() {
 		boolean wumpus = false;
 		boolean pit = false;
@@ -143,7 +197,12 @@ public class Board {
 		return precepts.toString();
 	}
 
-	//return whether there was a wall there
+	/**
+	 * Moves the player one cell in the given direction
+	 * 
+	 * @param dir The direction to move ('u' = up, 'd' = down, 'l' = left, 'r' = right)
+	 * @return Whether the player successfully moved (whether there was a wall in that direction)
+	 */
 	public boolean move(char dir) {
 		if (dir == 'u') {
 			if (player.getRow() > 0) {
@@ -180,7 +239,12 @@ public class Board {
 		return true;
 	}
 
-	//returns whether the shot hit the Wumpus
+	/**
+	 * Makes the user shoot the arrow in the given direction
+	 * 
+	 * @param dir The direction to shoot ('u' = up, 'd' = down, 'l' = left, 'r' = right)
+	 * @return Whether the player successfully killed the Wumpus
+	 */
 	public boolean shoot(char dir) {
 		int r = player.getRow();
 		int c = player.getCol();
@@ -227,6 +291,11 @@ public class Board {
 		return false;
 	}
 
+	/**
+	 * Returns a string representation of the contents of the board (for cheat mode)
+	 * 
+	 * @param A string representation of the current game board
+	 */
 	public String toString() {
 		StringBuilder build = new StringBuilder();
 		build.append(player.toString()+"\n");
