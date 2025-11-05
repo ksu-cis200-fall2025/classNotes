@@ -13,38 +13,38 @@ rational fields? int for numerator, denominator
 integer fields? int for the number
 
 
-Real operations:
+RealNumber operations:
 
-    public Real plus(Real another) {
+    public RealNumber plus(RealNumber another) {
         result is a real
 
         double result = val + another.val;
-        return new Real(result);
+        return new RealNumber(result);
     }
 
 
 
-Rational operations:
+RationalNumber operations:
 
-    public Real plus(Real another) {
-        if (another instanceof Rational) {
+    public RealNumber plus(RealNumber another) {
+        if (another instanceof RationalNumber) {
             //we are adding two rationals
 
-            Rational otherRat = (Rational) another;
+            RationalNumber otherRat = (RationalNumber) another;
 
             int comDenom = denom*otherRat.denom;
             int newNum = num*otherRat.denom + other.num*denom;
 
-            return new Rational(newNum, comDenom);
+            return new RationalNumber(newNum, comDenom);
         }
         return super.plus(another);
     }
 
 
-Integer operations:
+IntegerNumber operations:
 
-    public Real plus(Real another) {
-        //is another an integer? cast it and make result an integer
+    public RealNumber plus(RealNumber another) {
+        //is another an IntegerNumber? cast it and make result an integer
 
     }
 
@@ -71,6 +71,9 @@ String small = str.trim(); //"2/3"
 
 
 Then how to tell what kind of number?
+    / in rationals
+    . in reals
+
 
 How to tell if invalid?
 
