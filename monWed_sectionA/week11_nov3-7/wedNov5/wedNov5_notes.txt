@@ -2,17 +2,24 @@ Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
-real field?
+real: numbers with decimals
+rational: fraction
+integer: whole number
 
-rational fields?
+real field? double for the number (val)
 
-integer fields?
+rational fields? int for numerator, denominator
+
+integer fields? int for the number
 
 
 Real operations:
 
     public Real plus(Real another) {
-        
+        result is a real
+
+        double result = val + another.val;
+        return new Real(result);
     }
 
 
@@ -20,14 +27,25 @@ Real operations:
 Rational operations:
 
     public Real plus(Real another) {
-        
+        if (another instanceof Rational) {
+            //we are adding two rationals
+
+            Rational otherRat = (Rational) another;
+
+            int comDenom = denom*otherRat.denom;
+            int newNum = num*otherRat.denom + other.num*denom;
+
+            return new Rational(newNum, comDenom);
+        }
+        return super.plus(another);
     }
 
 
 Integer operations:
 
     public Real plus(Real another) {
-        
+        //is another an integer? cast it and make result an integer
+
     }
 
 
@@ -41,15 +59,47 @@ Input is like:
 
 What to look for first?
 
+look for the operator (+, -, or *)
+use substring to grab on either side
+
+
+String str = "  2/3";
+String small = str.trim(); //"2/3"
+
+
+
+
+
 Then how to tell what kind of number?
 
 How to tell if invalid?
 
+apple + 3/4
+
+
+String front = "apple";
+int val = Integer.parseInt(front);
+
+if not an integer, when I parse it will throw an exception
+
+use a try/catch
 
 ///////////////////
 
 enums
 
+public enum DayOfWeek {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+
+DayOfWeek day = DayOfWeek.Monday;
 
 ////////////////////
 

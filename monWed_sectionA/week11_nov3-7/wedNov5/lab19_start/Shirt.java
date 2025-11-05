@@ -18,6 +18,11 @@ public class Shirt {
         color = newColor;
     }
 
+    protected double unitCost() {
+        //find the unit cost
+
+    }
+
     public double orderCost() {
         double unitCost = 0;
         switch (color) {
@@ -31,10 +36,14 @@ public class Shirt {
                 break;
         }
 
-        return count*unitCost;
+        return count*unitCost();
+    }
+
+    protected String getName() {
+        return "Shirt";
     }
 
     public String toString() {
-        return String.format("Shirt order, color: %s, count: %d, cost: $%.2f", color, count, orderCost());
+        return String.format("%s order, color: %s, count: %d, cost: $%.2f", getName() color, count, orderCost());
     }
 }
