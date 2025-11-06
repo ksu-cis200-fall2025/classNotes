@@ -2,32 +2,61 @@ Project 9 due Friday
 
 RealNumber, RationalNumber, IntegerNumber
 
+top class: RealNumber
+RationalNumber extend RealNumber
+IntegerNumber extend RationalNumber
+
+
 real field?
+    double
 
 rational fields?
+    ints for numerator and denominator
+
 
 integer fields?
+    int for num
 
 
-Real operations:
+RealNumber operations:
 
-    public Real plus(Real another) {
-        
+RealNumber one = new RealNumber(3.2);
+RealNumber two = new RealNumber(4.5);
+RealNumber added = one.plus(two);
+
+    public RealNumber plus(RealNumber another) {
+        //val, another.val
+
+        return new RealNumber(val + another.val);
     }
 
 
 
-Rational operations:
+RationalNumber operations (override from RealNumber):
 
-    public Real plus(Real another) {
-        
+    public RealNumber plus(RealNumber another) {
+        if (another instanceof RationalNumber) {
+            RationalNumber other = (RationalNumber) another;
+
+            int newNum = (find this from num, denom, other.num, other.denom);
+            int newDenom = (find this from num, denom, other.num, other.denom);
+
+            return new RationalNumber(newNum, newNum);
+        }
+        else {
+            //another is real
+            return super.plus(another);
+        }
     }
 
 
-Integer operations:
+IntegerNumber operations:
 
-    public Real plus(Real another) {
-        
+    public RealNumber plus(RealNumber another) {
+        //check if another is an IntegerNumber
+        //if it is, construct and return a new IntegerNumber
+
+        otherwise, call super
     }
 
 
@@ -39,16 +68,47 @@ Input is like:
 
 
 
-What to look for first?
+What to look for first? look for operator (+, -, or *)
+
+use substring to get the two number pieces on either side
+
+String piece = "0.57 ";
+String trimmed = piece.trim(); //"0.57"
+
 
 Then how to tell what kind of number?
 
+real number? look for decimal
+    Double.parseDouble
+
+rational number? look for slash
+    break apart numerator and denominator
+
+no slash or decimal? integer
+
+
 How to tell if invalid?
 
+0.57 + apple
+
+
+use a try/catch when doing your converting to double/int
 
 ///////////////////
 
 enums
+
+public enum DayOfWeek {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+DayOfWeek day = DayOfWeek.Monday;
 
 
 ////////////////////
