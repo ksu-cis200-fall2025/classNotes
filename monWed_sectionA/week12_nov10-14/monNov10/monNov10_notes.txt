@@ -12,6 +12,9 @@ ArrayList example: collection of circles
 
 ////////////////////////////
 
+purpose: list of requirements
+
+
 Interfaces
 - write Nameable interface
 - make Circle implement Nameable
