@@ -10,12 +10,17 @@ After fall break: start C#
 
 ArrayList example: collection of circles
 
+ArrayList<Type> 
+
+no type casting needed
+
 ////////////////////////////
 
-purpose: list of requirements
+Interfaces.
+
+purpose? list of requirements for any class that implements it
 
 
-Interfaces
 - write Nameable interface
 - make Circle implement Nameable
 

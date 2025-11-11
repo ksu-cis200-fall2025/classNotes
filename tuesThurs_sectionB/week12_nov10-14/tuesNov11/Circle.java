@@ -1,4 +1,4 @@
-public class Circle {
+public class Circle implements Nameable {
     //fields
     private double radius;
     public static final double PI = 3.14;
@@ -6,6 +6,10 @@ public class Circle {
     //constructor
     public Circle(double radius) {
         this.radius = radius;
+    }
+
+    public String name() {
+        return "Circle";
     }
 
     public void setRadius(double r) {
