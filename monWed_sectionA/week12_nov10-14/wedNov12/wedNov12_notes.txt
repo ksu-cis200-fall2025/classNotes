@@ -12,17 +12,53 @@ Project 10.
 
 How does an interface extend another interface?
 
+(maybe Another is some other interface)
+
+public interface Name extends Another {
+
+}
+
+if a class implements Name:
+    - must include all methods from Name
+    - also must include all methods from Another
+
+
 JavaDoc style
 
 Creating random grocery order
 
+pick 4-20 items 
+for each item, pick a random combination
+
+use random number generator to figure out number between 4-20
+for each one you want to randomly generate
+    want a random number 0-5
+        0: Apple
+        1: Chips
+        etc.
+
+maybe random donut
+    random number with 2 possible values: 0 frosted, 1 unfrosted
+    random number for possible counts
+
+
+
 ////////////////////////////
 
 TreeSet.
+    sorts items
+    does not allow duplicates
 
-How are things stored?
+How are things stored? sorted order
 
-What kinds of things can be added?
+What kinds of things can be added? things we can sorted
+
+compareTo
+    -1 if this object came before param
+    0 if this object equals param
+    1 if this object comes after parm
+
+
 
 What do we do to a class if we want to store those objects in a TreeSet?
 
@@ -30,10 +66,26 @@ What do we do to a class if we want to store those objects in a TreeSet?
 
 Goal: TreeSet of type Person.
 
-Sort by name, then by age
+First, make TreeSet with current Person
+
+
+Next: Sort by name, then by age
 
 ///////////////////////////
 
 Lab.
 
 How to check if we are comparing the same types of shapes?
+
+Note: really should override equals when using TreeSet, but we'll ignore
+
+
+public int compareTo(Shape s) {
+    //if we are in the Rectangle class
+    if (s instanceof Rectangle) {
+        //comparing two rectangles
+    }
+    else {
+        //compare name (they are different types)
+    }
+}
