@@ -86,6 +86,7 @@ public int compareTo(Shape s) {
         //comparing two rectangles
     }
     else {
-        //compare name (they are different types)
+        //you know the shapes are different types
+        //compare their names
     }
 }
