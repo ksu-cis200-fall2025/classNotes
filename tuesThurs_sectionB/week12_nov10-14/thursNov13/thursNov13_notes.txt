@@ -1,0 +1,39 @@
+Project 10 due Friday (last Java project)
+
+Exam 3 is Thursday, November 20
+- will post exam information
+- will do short review Tuesday, November 18
+
+Will start C# after fall break
+
+////////////////////////////
+
+Project 10.
+
+How does an interface extend another interface?
+
+JavaDoc style
+
+Creating random grocery order
+
+////////////////////////////
+
+TreeSet.
+
+How are things stored?
+
+What kinds of things can be added?
+
+What do we do to a class if we want to store those objects in a TreeSet?
+
+///////////////////////////
+
+Goal: TreeSet of type Person.
+
+Sort by name, then by age
+
+///////////////////////////
+
+Lab.
+
+How to check if we are comparing the same types of shapes?
