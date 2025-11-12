@@ -1,12 +1,11 @@
+import java.util.*;
+
 /**
  * View represents the view component in an MVC architecture for Wumpus world
  * 
  * @author Julie Thornton
  * @version Project 8
  */
-
-
-import java.util.*;
 
 public class View {
 	private Scanner s;

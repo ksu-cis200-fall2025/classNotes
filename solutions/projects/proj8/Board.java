@@ -1,12 +1,11 @@
+import java.util.*;
+
 /**
  * Board represents the board in Wumpus world
  * 
  * @author Julie Thornton
  * @version Project 8
  */
-
-
-import java.util.*;
 
 public class Board {
 	private Cell[][] game;
@@ -294,7 +293,7 @@ public class Board {
 	/**
 	 * Returns a string representation of the contents of the board (for cheat mode)
 	 * 
-	 * @param A string representation of the current game board
+	 * @return A string representation of the current game board
 	 */
 	public String toString() {
 		StringBuilder build = new StringBuilder();

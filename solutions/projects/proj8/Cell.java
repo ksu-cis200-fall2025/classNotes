@@ -85,7 +85,7 @@ public class Cell {
 	/**
 	 * Returns a string representation of the contents of this cell
 	 * 
-	 * @param A string representation of this cell
+	 * @return A string representation of this cell
 	 */
 	public String toString() {
 		StringBuilder build = new StringBuilder();
