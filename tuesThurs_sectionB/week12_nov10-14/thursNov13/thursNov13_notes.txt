@@ -12,15 +12,47 @@ Project 10.
 
 How does an interface extend another interface?
 
+public interface SomeInterface extends AnotherInterface {
+
+}
+
+public class SomeClass implements SomeInterface {
+    //must complete methods from SomeInterface
+
+    //ALSO must complete methods from AnotherInterface
+}
+
+
 JavaDoc style
 
 Creating random grocery order
+
+randomly generate 4-20 items in a random configuration
+
+use a random number generator to pick between 4-20 items
+
+for each item, pick a random number 0-5
+    0: chips
+    1: apple
+
+donuts.
+    frosted/frosted
+    1-12
+
+    pick a random number that has 2 possible values
+        0: frosted
+        1: unfrosted    
+    pick a random number 1-12: choose that many donuts
 
 ////////////////////////////
 
 TreeSet.
 
 How are things stored?
+    NO index
+    stored in sorted order
+    not linear
+    no duplicates
 
 What kinds of things can be added?
 
@@ -36,4 +68,28 @@ Sort by name, then by age
 
 Lab.
 
+TreeSet of Shapes. 
+
+public interface Shape extends Comparable<Shape> {
+
+}
+
+Now ALL shapes must also have:
+
+public int compareTo(Shape s) {
+
+}
+
 How to check if we are comparing the same types of shapes?
+
+order first by shape type
+
+
+pretend we are in Rectangle:
+
+public int compareTo(Shape s) {
+    //is s a Rectangle?
+    if (s instanceof Rectangle) {
+        Rectangle r = (Rectangle) s;
+    }
+}
