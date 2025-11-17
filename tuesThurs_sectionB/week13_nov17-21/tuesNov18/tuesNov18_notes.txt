@@ -1,0 +1,39 @@
+Tutorial due yesterday
+Exam 3 is Thursday, November 20
+No project this week
+
+(We start C# after fall break. The tutorial right after
+break will have you install .NET so you can use VS Code for
+C# development.)
+
+///////////////////////////
+
+Exam 3 review
+- Closed notes/closed computers
+- Can use full time
+- Part multiple choice, part "open-ended"
+
+Topics:
+- General classes (fields, constructors, methods, creating and
+    using objects)
+- New keywords: static, null, instanceof, private, public,
+    protected, interface, implements, extends
+- Arrays of objects
+- Exception handling
+- MVC architecture
+- Inheritance, extending a class
+- Method overriding
+- Object class methods (toString, equals)
+- Interfaces, implementing an interface
+- Java collections (ArrayList, TreeSet, HashMap)
+
+
+///////////////////////////
+
+Work some practice problems
+
+///////////////////////////
+
+Lab: see started code. 
+
+Goal: use HashMap to lookup/update student information by name
