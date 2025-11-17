@@ -16,11 +16,22 @@ Exam 3 review
 Topics:
 - General classes (fields, constructors, methods, creating and
     using objects)
-- New keywords: static, null, instanceof, private, public,
+- New keywords: static, null, this, instanceof, private, public,
     protected, interface, implements, extends
 - Arrays of objects
 - Exception handling
+    try/catch
+        IOException (working with a file)
+        InputMismatchException (nextInt, nextDouble)
+        NumberFormatException (Integer.parseInt, Double.parseDouble)
+    throwing exceptions
+        inside a method, if I can't return something that makes sense
+        IllegalArgumentException (fine to use on an exam)
+
 - MVC architecture
+    M = model (stores data, does calculations)
+    V = view (input/output)
+    C = controller (controls)
 - Inheritance, extending a class
 - Method overriding
 - Object class methods (toString, equals)
