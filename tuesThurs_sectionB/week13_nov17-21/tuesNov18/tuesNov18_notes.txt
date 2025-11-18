@@ -18,12 +18,49 @@ Topics:
     using objects)
 - New keywords: static, null, instanceof, private, public,
     protected, interface, implements, extends
+
+
+public class A {
+    protected int x;
+
+    public void DoStuff() {
+
+    }
+
+}
+
+public class B extends A {
+    //inherits everything protected and public
+
+    public void DoStuff() {
+        //method overriding
+    }
+}
+
 - Arrays of objects
 - Exception handling
+    try/catch
+    working with a file
+    user input
+    IOException - working with file 
+    NumberFormatException - Double.parseDouble, etc.
+    InputMismatchException - nextInt, nextDouble
+
+    throwing exceptions - do in a method if you can't 
+        return a value that makes sense or do the intended operation
+
+        can throw IllegalArgumentException
+
 - MVC architecture
+    M = model (data, calculations)
+    V = view (input/output)
+    C = controller (intermediary between model and view)
+
 - Inheritance, extending a class
 - Method overriding
 - Object class methods (toString, equals)
+    
+
 - Interfaces, implementing an interface
 - Java collections (ArrayList, TreeSet, HashMap)
 
