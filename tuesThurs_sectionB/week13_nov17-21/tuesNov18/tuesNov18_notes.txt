@@ -71,6 +71,6 @@ Work some practice problems
 
 ///////////////////////////
 
-Lab: see started code. 
+Lab: see started code
 
 Goal: use HashMap to lookup/update student information by name
