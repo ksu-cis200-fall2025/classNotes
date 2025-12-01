@@ -21,6 +21,9 @@ F (below 30): 8 students (including 3 zeroes)
 
 
 **Midterm equivalent from final
+    example: plug in 80/100 on the final
+    ALSO plug in 40/50 on the midterm equivalent
+
 **How to use "what if" in Canvas
 
 ////////////////////////
@@ -35,33 +38,93 @@ Reminder: make Hello, world console app
 
 Variables/operations?
 
+boolean -> bool
+String -> string
+int, double, char - the same
+
+
 Input/output?
 
+
+
+
 Conditional statements?
+    if, if/else, if/else if, switch
+    SAME
+
 
 Loops?
+    for, for each, while, do-while
+    only for each is different
 
 Arrays?
+    int[] nums = new int[10];
+
+    for (int i = 0; i < nums.Length; i++) {
+        
+    }
+
+Java:    for (int name : nums)
+
+C#: foreach (int name in nums)
+
 
 strings?
+    string str = "hello";
+    in Java: char first = str.charAt(0);
+    in Java: int len = str.length();
+
+    in C#: char first = str[0];
+    in C#: int len = str.Length;
+
 
 (skip files for now)
 
 Methods?
+    exactly the same 
+    convention to capitalize method names
 
 General classes?
+    exactly the same
+
+Exceptions?
+
+in Java:
+try {
+    //something
+}
+catch (InputMismatchException ie) {
+    //do something
+}
+
+
+in C#:
+try {
+    //something
+}
+catch (FormatException) {
+    //do something
+}
 
 //////////////////////////
 
 Properties.
 
-Make Person class with name/age, Birthday method
+Make Person class with name/age
 
 - first use fields, getters/setters
 - then use properties
+
+--> create objects, use properties
+
 - autoproperty syntax
-- restrict age to be positive
-- create objects, initialize fields
+- restrict age to be 0-120
+- add Birthday method
+- make it so can only change age inside Person
+
+
+--> remove constructor
+--> make name/age only able to be initialized
 
 ///////////////////////////
 
@@ -70,6 +133,14 @@ Lab 23.
 Convert shift cipher (lab 16) to C#
 
 string, StringBuilder differences
+
+StringBuilder: 
+    using System.Text;
+
+    Append
+    ToString
+
+nullables
 
 Lab 16 solution is in classNotes repo if you don't have it
 
