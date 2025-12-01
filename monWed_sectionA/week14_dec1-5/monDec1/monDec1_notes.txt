@@ -1,0 +1,76 @@
+Tutorial due tonight (this is the last tutorial)
+Labs today and Wednesday
+Project 11 due Friday (this is the last project)
+
+**We will still have two labs next week to practice
+graphical development in C#, but no tutorial or project.
+
+/////////////////////////////////
+
+Exam 3 results
+
+High: 50/50 (4 students)
+Average: 36/50 (artificially low, since several
+    elected not to take exam 3)
+
+A (45-50): 9 students
+B (40-44): 7 students
+C (35-39): 7 students
+D (30-34): 3 students
+F (below 30): 8 students (including 3 zeroes)
+
+
+**Midterm equivalent from final
+**How to use "what if" in Canvas
+
+////////////////////////
+
+Today: start C#
+
+////////////////////////
+
+Reminder: make Hello, world console app
+
+/////////////////////////
+
+Variables/operations?
+
+Input/output?
+
+Conditional statements?
+
+Loops?
+
+Arrays?
+
+strings?
+
+(skip files for now)
+
+Methods?
+
+General classes?
+
+//////////////////////////
+
+Properties.
+
+Make Person class with name/age, Birthday method
+
+- first use fields, getters/setters
+- then use properties
+- autoproperty syntax
+- restrict age to be positive
+- create objects, initialize fields
+
+///////////////////////////
+
+Lab 23. 
+
+Convert shift cipher (lab 16) to C#
+
+string, StringBuilder differences
+
+Lab 16 solution is in classNotes repo if you don't have it
+
+
