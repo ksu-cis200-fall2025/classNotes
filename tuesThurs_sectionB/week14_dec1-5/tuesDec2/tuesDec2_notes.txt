@@ -23,45 +23,82 @@ F (below 30): 8 students (including 3 zeroes)
 **Midterm equivalent from final
 **How to use "what if" in Canvas
 
+Final exam assignment
+
+Midterm equivalent from final exam assignment (in Midterms category)
+
+Example: what if I got an 80/100 on the final?
+    plug into midterm equivalent: 40/50
+
 ////////////////////////
 
 Today: start C#
 
 ////////////////////////
 
-Reminder: make Hello, world console app
+Reminder: make console app to get age, print it back out
 
 /////////////////////////
 
 Variables/operations?
+    string is lowercase
+    bool instead of boolean
 
 Input/output?
 
 Conditional statements?
 
 Loops?
+    foreach has different syntax
 
 Arrays?
+    int[] nums = new int[4];
+    for (int i = 0; i < nums.Length; i++)
+
+    foreach (int x in nums)
+
 
 strings?
+    string str = "hello";
+    char letter = str[0];
+    int len = str.Length;
+
 
 (skip files for now)
 
-Methods?
+Methods? capitalize method names by convention
 
 General classes?
+    same, but now have properties
+
+Exceptions?
+
+    try {
+        //code that might cause problems
+    }
+    catch (FormatException) {
+        //handle problem
+    }
 
 //////////////////////////
 
 Properties.
 
-Make Person class with name/age, Birthday method
+Make Person class with name/age
 
 - first use fields, getters/setters
 - then use properties
+
+--> create objects, use properties
+
 - autoproperty syntax
-- restrict age to be positive
-- create objects, initialize fields
+- restrict age to be 0-120
+- add Birthday method
+- make it so can only change age inside Person
+
+
+--> remove constructor
+--> make name/age only able to be initialized
 
 ///////////////////////////
 
@@ -70,6 +107,10 @@ Lab 23.
 Convert shift cipher (lab 16) to C#
 
 string, StringBuilder differences
+
+.Append
+.ToString
+
 
 Lab 16 solution is in classNotes repo if you don't have it
 
