@@ -1,0 +1,88 @@
+Project 11 due Friday (last one)
+    implement interface in C#: use ":" instead of "implements"
+
+    Random numbers:
+        Random r = new Random();
+        int num = r.Next(4); //0,1,2, or 3
+
+    instead of "instanceof", use "is"
+
+
+
+Next week:
+--> No tutorial or project
+--> Labs (graphical C#) Monday and Wednesday
+
+/////////////////////////////
+
+Reading from files.
+
+
+using System.IO;
+
+
+using (StreamReader r = new StreamReader(filename)) {
+    while (!r.EndOfStream) {
+        string line = r.ReadLine();
+
+        //process line
+    }
+}
+
+
+--> how to handle problems with file?
+
+
+///////////////////////////////
+
+List in C#
+
+using System.Collections.Generic;
+
+
+List<Type> name = new List<Type>();
+
+.Add, .Count, .Contains, .Remove, etc.
+
+(just like ArrayList)
+
+
+///////////////////////////////////
+
+Finish Rectangle example.
+
+--> now make Length/Width properties
+    --> remove constructor (see init access)
+    
+--> make Area a property
+--> override ToString
+
+--> make a property for Rectangle name ("Rectangle")
+
+
+//////////////////////////////////
+
+Dictionary: like HashMap
+
+using System.Collections.Generic;
+
+
+Dictionary<KeyType, ValueType> d = new Dictionary<KeyType, ValueType>();
+
+.ContainsKey
+.Add(key, value)    OR    d[key] = value
+    (Add will throw exception if key there)
+    (using [] will add if key not there and update if key there)
+
+
+
+ValueType v = d[key];
+
+
+
+foreach(KeyType k in d.Keys)
+
+
+////////////////////////////
+
+Lab.
