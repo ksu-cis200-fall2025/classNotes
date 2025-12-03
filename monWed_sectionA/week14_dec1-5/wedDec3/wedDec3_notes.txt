@@ -12,6 +12,7 @@ Project 11 due Friday (last one)
 Next week:
 --> No tutorial or project
 --> Labs (graphical C#) Monday and Wednesday
+--> Some review for the final exam on Wednesday
 
 /////////////////////////////
 
@@ -21,13 +22,19 @@ Reading from files.
 using System.IO;
 
 
-using (StreamReader r = new StreamReader(filename)) {
-    while (!r.EndOfStream) {
-        string line = r.ReadLine();
+try {
+    using (StreamReader r = new StreamReader(filename)) {
+        while (!r.EndOfStream) {
+            string line = r.ReadLine();
 
-        //process line
+            //process line
+        }
     }
 }
+catch (IOException) {
+    
+}
+
 
 
 --> how to handle problems with file?
