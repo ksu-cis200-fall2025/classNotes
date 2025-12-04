@@ -20,14 +20,19 @@ Reading from files.
 
 using System.IO;
 
+try {
+    using (StreamReader r = new StreamReader(filename)) {
+        while (!r.EndOfStream) {
+            string line = r.ReadLine();
 
-using (StreamReader r = new StreamReader(filename)) {
-    while (!r.EndOfStream) {
-        string line = r.ReadLine();
-
-        //process line
+            //process line
+        }
     }
 }
+catch (IOException) {
+    handle problems
+}
+
 
 
 --> how to handle problems with file?
@@ -53,6 +58,7 @@ Finish Rectangle example.
 
 --> now make Length/Width properties
     --> remove constructor (see init access)
+    --> private accessors
     
 --> make Area a property
 --> override ToString

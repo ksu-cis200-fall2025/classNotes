@@ -20,6 +20,9 @@ try {
             string[] pieces = line.Split(' ');
 
             //how to add rectangle with new info to the list?
+            Rectangle r = new Rectangle(){Length = Convert.ToInt32(pieces[0]), Width = Convert.ToInt32(pieces[1])};
+            r.Length = 4;
+            list.Add(r);
         }
     }
 }
@@ -28,3 +31,6 @@ catch (IOException) {
 }
 
 //how to print all rectangles?
+foreach (Rectangle r in list) {
+    Console.WriteLine(r);
+}
