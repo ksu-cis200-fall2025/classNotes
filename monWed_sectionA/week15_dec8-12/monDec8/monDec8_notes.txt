@@ -31,14 +31,12 @@ See creating click event
 
 
 
-Example: display running total of entered numbers
-
 
 //////////////////////////
 
 MessageBox.Show - display message dialog
 
-Display MessageBox for any negative input (and don't add them)
+
 
 //////////////////////////
 
