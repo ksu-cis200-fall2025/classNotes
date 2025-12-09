@@ -1,0 +1,42 @@
+Final exam: Thursday, December 18 11:50 am - 1:40 pm in DUE 1116
+
+**Midterm equivalent from final exam category
+
+Office hours during finals week
+
+/////////////////////////////
+
+Part multiple choice, part open-ended
+Cumulative
+Questions in Java and C# (but won't emphasize differences between them)
+
+
+Topics:
+- Programming basics (declaring a class/main method)
+- Printing
+- Variables, operations, and type casting
+- User input and conversions
+- Conditional statements
+- Loops (while, do-while, for, for each)
+
+- Arrays (single-dimensional and two-dimensional)
+- Strings and string library methods
+- Input files and output files
+- Writing and calling separate methods (static and non-static)
+
+- Writing general classes 
+    (fields, properties [C# only], constructors, methods, 
+    creating objects, calling methods)
+- Inheritance and extending a class
+- Interfaces and implementing an interface
+- Exceptions and exception handling
+- Overriding the toString/ToString
+- Collections: ArrayList, TreeSet, and HashMap in Java; 
+    List in C#. 
+
+
+Work some practice problems?
+
+////////////////////
+
+See Lab 26 starter
