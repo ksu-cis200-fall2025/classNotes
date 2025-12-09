@@ -7,7 +7,8 @@ Final exam: Wednesday, December 17 2:00-3:50 pm in DUE 1114
 
 /////////////////////////////
 
-For this week, use lab machines
+For this week, use lab machines 
+(unless you already installed Visual Studio)
 
 /////////////////////////////
 
@@ -31,14 +32,11 @@ See creating click event
 
 
 
-Example: display running total of entered numbers
+Example: say Hello to each name entered
 
+--> first with MessageBox
+--> then in a label
 
-//////////////////////////
-
-MessageBox.Show - display message dialog
-
-Display MessageBox for any negative input (and don't add them)
 
 //////////////////////////
 
@@ -54,6 +52,11 @@ What is in pieces now?
 
 
 What if we wanted a List<int>?
+
+create a List<int>
+loop through pieces
+    convert current piece to an int
+    add to your list
 
 ////////////////////////////
 
