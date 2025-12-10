@@ -8,7 +8,8 @@ Office hours during finals week
 
 Part multiple choice, part open-ended
 Cumulative
-Questions in Java and C# (but won't emphasize differences between them)
+Questions in Java and C# (but won't emphasize differences 
+    between them)
 
 
 Topics:
@@ -30,7 +31,7 @@ Topics:
 - Inheritance and extending a class
 - Interfaces and implementing an interface
 - Exceptions and exception handling
-- Overriding the toString/ToString
+- Overriding toString/ToString
 - Collections: ArrayList, TreeSet, and HashMap in Java; 
     List in C#. 
 
