@@ -30,6 +30,7 @@ Topics:
     creating objects, calling methods)
 - Inheritance and extending a class
 - Interfaces and implementing an interface
+- Model-View-Controller
 - Exceptions and exception handling
 - Overriding toString/ToString
 - Collections: ArrayList, TreeSet, and HashMap in Java; 

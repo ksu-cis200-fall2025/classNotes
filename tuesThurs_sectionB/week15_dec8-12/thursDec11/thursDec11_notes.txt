@@ -1,6 +1,10 @@
-Final exam: Wednesday, December 17 2:00-3:50 pm in DUE 1116
+Final exam: Wednesday, December 17 2:00-3:50 pm in DUE 1114
 
 **Midterm equivalent from final exam category
+
+
+Office hour times.
+
 
 /////////////////////////////
 
@@ -27,7 +31,20 @@ Topics:
     creating objects, calling methods)
 - Inheritance and extending a class
 - Interfaces and implementing an interface
+- Model-View-Controller architecture 
 - Exceptions and exception handling
-- Overriding the toString/ToString
+- Overriding toString/ToString
 - Collections: ArrayList, TreeSet, and HashMap in Java; 
     List in C#. 
+
+Work practice problems?
+
+//////////////////////////////
+
+Lab 26.
+
+See working solution.
+
+See starter code.
+
+Turn off code completion tools.
