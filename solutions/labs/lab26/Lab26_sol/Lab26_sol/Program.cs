@@ -1,4 +1,4 @@
-namespace lab26_starter
+namespace Lab26
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace lab26_starter
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Lab26());
+            Application.Run(new GUI());
         }
     }
 }
